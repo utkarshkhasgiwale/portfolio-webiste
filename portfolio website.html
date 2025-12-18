@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio website .css">
+</head>
+<body>
+    <div id = "wrapper"> 
+    <div class="container">
+    <div class="navbar">
+
+    <div class="logocontainer">
+    <img src="https://img.freepik.com/premium-vector/letter-u-logo-icon-design-template-elements_697638-258.jpg" class="logo">
+     <div class="logotext">tkarsh Khasgiwale</div>
+     </div>
+     <div class="nav-items">
+        <div><a href="#projects">Projects</a></div>
+        <div><a href="#skills">Skills</a></div>
+        <div><a href="#contacme">Contact Me</a></div>
+     </div>
+     </div>
+
+<div class="hero-section">
+
+<div class="hero-section-left">
+    <div class="hero-section-heading">Hi!! Utkarsh Khasgiwale</div>
+    <div class="hero-section-sub-heading">
+        I am a <span class="role"></span>
+    </div>
+
+    <div class="hero-section-discription">
+        I'm a software developer and here is my portfolio website. Here you'll
+        learn about my journey as a software developer.
+    </div>
+
+    <div class="btn-pink" id="btn">Hire me <img class="linkedin-icon" src="icons8-linkedin-2-30.gif" alt="LinkedIn" img src="icons8-linkedin-2-301.png" alt="LinkedIn"></div>
+    <div class=" absolute faded-text">Utkarsh khasgiwale</div>
+
+</div>
+
+<div class="hero-section-right">
+
+      
+
+
+     <div class="absolute icons icon-dots">
+        <img src="https://mojij3010.github.io/My-Portfolio/dots.png" alt="">
+     </div>
+    
+     <div class="absolute icons icon-cube">
+        <img src="https://mojij3010.github.io/My-Portfolio/cube.png" alt="">
+     </div>
+
+     <div class="absolute icons icon-circle">
+        <img src="https://mojij3010.github.io/My-Portfolio/circle.png" alt="">
+     </div>
+
+     <div class="absolute icons icon-zigzag">
+        <img src="https://mojij3010.github.io/My-Portfolio/zigzags.png" alt="">
+     </div>
+
+     <div class="absolute icons icon-plus">
+        <img src="https://mojij3010.github.io/My-Portfolio/plus.png" alt="">
+     </div>
+
+     <div class="user-image Utkarsh">
+        <img src="image.png" alt="">
+     </div>
+</div>
+
+</div>
+
+     </div>
+        <!-- Include Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Include Font Awesome -->
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+
+<!-- Typed.js Initialization -->
+<script>
+  var typeData = new Typed(".role", {
+    strings: [
+      "Full Stack Developer",
+      "Web Developer",
+      "UI/UX Designer",
+      "Backend Developer",
+      "Coder"
+    ],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1000
+  });
+</script>
+
+<script>
+  const btn = document.querySelector('.btn-pink');
+
+  // list of colors you want to cycle through
+  const colors = [
+    '#ff4757', // red
+    '#3742fa', // blue
+    '#2ed573', // green
+    '#ffa502', // orange
+    '#e84393'  // pink
+  ];
+
+  let lastIndex = -1;  // to avoid same color twice in a row
+
+  btn.addEventListener('mouseenter', () => {
+    let i;
+    // pick a new index different from the last one
+    do {
+      i = Math.floor(Math.random() * colors.length);
+    } while (i === lastIndex && colors.length > 1);
+
+    lastIndex = i;
+    btn.style.backgroundColor = colors[i];
+    btn.style.color = 'white';
+  });
+
+  // OPTIONAL: if you want to reset color when mouse leaves
+  // btn.addEventListener('mouseleave', () => {
+  //   btn.style.backgroundColor = 'orangered';
+  // });
+</script>
+ 
+<!-- ---------- Project section ------------ -->
+
+<div class="project-section" id="project">
+   <h2 class="page-header">Projects</h2>
+
+   <div class="project-container">
+      <div class="project-card" id="project1">
+         <div class="project-number project-number-left">01</div>
+            <div class="project-content project-content-left">
+
+               <div class="project-skills-container">
+                  <img class="project-skill" src="CSS.png" alt="">
+                  <img class="project-skill" src="HTML.png" alt="">
+                  <img class="project-skill" src="MongoDB.svg"alt="">
+                  <img class="project-skill" src="Javascript.svg" alt="">
+                  <img class="project-skill" src="Next.svg" alt="">
+                  <img class="project-skill" src="NodeJs.svg" alt="">
+                  <img class="project-skill" src="NextJsCircle.png" alt="">
+                  <img class="project-skill" src="NavLogo.png" alt="">
+                  <img class="project-skill" src="Github.svg" alt="">
+                  <img class="project-skill" src="Git.svg" alt="">
+                  <img class="project-skill" src="Express.png" alt="">
+                  <img class="project-skill" src="Tailwind.png" alt="">
+                  <img class="project-skill" src="React.png" alt="">
+                  <img class="project-skill" src="Typescript.svg" alt="">
+               </div>
+
+               <h2 class="project-heading">Tnt & Orange</h2>
+
+               <p class="project-subHeading"> Its a carf modification company
+                  which provide you sheets to prtect your car from scratch
+               </p>
+               <div class="btn-grp">
+                  <button class="btn-pink btn-project"> Read More</button>
+                  <a href="">
+                     <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                  </a>
+
+                  <a href="">
+                     <i title="Live Link" class="fa-solid fa-link icon"> 
+                     </i>
+                  </a>
+               </div>
+            </div>
+         </div>
+          
+<div class="project-card" id="project2">
+         <div class="project-number project-number-right">02</div>
+            <div class="project-content project-content-right">
+
+               <div class="project-skills-container">
+                  <img class="project-skill" src="CSS.png" alt="">
+                  <img class="project-skill" src="HTML.png" alt="">
+                  <img class="project-skill" src="MongoDB.svg"alt="">
+                  <img class="project-skill" src="Javascript.svg" alt="">
+                  <img class="project-skill" src="Next.svg" alt="">
+                  <img class="project-skill" src="NodeJs.svg" alt="">
+                  <img class="project-skill" src="NextJsCircle.png" alt="">
+                  <img class="project-skill" src="NavLogo.png" alt="">
+                  <img class="project-skill" src="Github.svg" alt="">
+                  <img class="project-skill" src="Git.svg" alt="">
+                  <img class="project-skill" src="Express.png" alt="">
+                  <img class="project-skill" src="Tailwind.png" alt="">
+                  <img class="project-skill" src="React.png" alt="">
+                  <img class="project-skill" src="Typescript.svg" alt="">
+               </div>
+
+               <h2 class="project-heading project-heading-left">Tnt & Orange</h2>
+
+               <p class="project-subHeading"> Its a carf modification company
+                  which provide you sheets to prtect your car from scratch
+               </p>
+               <div class="btn-grp">
+                  <button class="btn-pink btn-project btn-project-left"> Read More</button>
+                  <a href="">
+                     <i title="GitHubLink" class="fa-brands fa-github icon icon-left"></i>
+                  </a>
+
+                  <a href="">
+                     <i title="Live Link" class="fa-solid fa-link icon icon-left"> 
+                     </i>
+                  </a>
+               </div>
+            </div>
+            </div>
+            
+            <div class="project-card" id="project3">
+               <div class="project-number project-number-left">03</div>
+               <div class="project-content project-content-left">
+                  
+                  <div class="project-skills-container">
+                     <img class="project-skill" src="CSS.png" alt="">
+                     <img class="project-skill" src="HTML.png" alt="">
+                     <img class="project-skill" src="MongoDB.svg"alt="">
+                     <img class="project-skill" src="Javascript.svg" alt="">
+                     <img class="project-skill" src="Next.svg" alt="">
+                     <img class="project-skill" src="NodeJs.svg" alt="">
+                     <img class="project-skill" src="NextJsCircle.png" alt="">
+                     <img class="project-skill" src="NavLogo.png" alt="">
+                     <img class="project-skill" src="Github.svg" alt="">
+                     <img class="project-skill" src="Git.svg" alt="">
+                     <img class="project-skill" src="Express.png" alt="">
+                     <img class="project-skill" src="Tailwind.png" alt="">
+                     <img class="project-skill" src="React.png" alt="">
+                     <img class="project-skill" src="Typescript.svg" alt="">
+                  </div>
+                  
+                  <h2 class="project-heading">Tnt & Orange</h2>
+                  
+                  <p class="project-subHeading"> Its a carf modification company
+                     which provide you sheets to prtect your car from scratch
+                  </p>
+                  <div class="btn-grp">
+                     <button class="btn-pink btn-project"> Read More</button>
+                     <a href="">
+                        <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                     </a>
+                     
+                     <a href="">
+                        <i title="Live Link" class="fa-solid fa-link icon"> 
+                        </i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+<div class="project-card" id="project4">
+         <div class="project-number project-number-right">04</div>
+            <div class="project-content project-content-right">
+
+               <div class="project-skills-container">
+                  <img class="project-skill" src="CSS.png" alt="">
+                  <img class="project-skill" src="HTML.png" alt="">
+                  <img class="project-skill" src="MongoDB.svg"alt="">
+                  <img class="project-skill" src="Javascript.svg" alt="">
+                  <img class="project-skill" src="Next.svg" alt="">
+                  <img class="project-skill" src="NodeJs.svg" alt="">
+                  <img class="project-skill" src="NextJsCircle.png" alt="">
+                  <img class="project-skill" src="NavLogo.png" alt="">
+                  <img class="project-skill" src="Github.svg" alt="">
+                  <img class="project-skill" src="Git.svg" alt="">
+                  <img class="project-skill" src="Express.png" alt="">
+                  <img class="project-skill" src="Tailwind.png" alt="">
+                  <img class="project-skill" src="React.png" alt="">
+                  <img class="project-skill" src="Typescript.svg" alt="">
+               </div>
+
+               <h2 class="project-heading" id="project-heading-left">Tnt & Orange</h2>
+
+               <p class="project-subHeading"> Its a carf modification company
+                  which provide you sheets to prtect your car from scratch
+               </p>
+               <div class="btn-grp">
+                  <button class="btn-pink btn-project btn-project-left"> Read More</button>
+                  <a href="">
+                     <i title="GitHubLink" class="fa-brands fa-github icon icon-left"></i>
+                  </a>
+
+                  <a href="">
+                     <i title="Live Link" class="fa-solid fa-link icon icon-left"> 
+                     </i>
+                  </a>
+               </div>
+            </div>
+           </div>
+            </div>
+   </div>
+ 
+<!-- ---------- skill section ------------ -->
+
+<section class="skill-container" id="skills">
+      <div class="skill-faded-text absolute">Skills</div>
+      <div class="left-skill-container">
+        <h2 class="skill-heading"><span>M</span>e and <br />MyTech Stack</h2>
+        <div class="skill-sub-heading">
+          <p>
+            Hi Everyone My name is Priyansh Patel I am a Full Stack Web
+            Developer I have been working for last 3 Years and Currently I am
+            working with a Budding Startup in USA and a full Time Freelancer.
+            Currently I am working on NextJs and Making Beautiful UI-UX are my
+            fey features
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+            doloremque aspernatur, maiores voluptatum minus laudantium?
+            Perspiciatis accusamus minima porro dolores necessitatibus, magni
+            dolorem et qui veniam nulla sequi molestiae maxime.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            quidem quos ullam veritatis voluptates tenetur qui ipsa nulla
+            culpa itaque?
+          </p>
+        </div>
+      </div>
+
+      <div class="right-skill-container">
+        <img src="blob vector.png" class="blob-style" alt="" />
+
+        <img src="HTML.png" alt="" class="skills-logo" />
+        <img src="CSS.png" alt="" class="skills-logo" />
+        <img src="Javascript.svg" alt="" class="skills-logo" />
+        <img src="React.png" alt="" class="skills-logo" />
+        <img src="NodeJs.svg" alt="" class="skills-logo" />
+        <img src="Next.svg" alt="" class="skills-logo" />
+        <img src="Git.svg" alt="" class="skills-logo" />
+        <img src="Bash.svg" alt="" class="skills-logo" />
+        <img src="Github.svg" alt="" class="skills-logo" />
+        <img src="ChartJs.svg" alt="" class="skills-logo" />
+        <img src="Express.png" alt="" class="skills-logo" />
+        <img src="MongoDB.svg" alt="" class="skills-logo" />
+        <img src="Tailwind.png" alt="" class="skills-logo" />
+        <img src="Bootstrap.svg" alt="" class="skills-logo" />
+        <img src="Typescript.svg" alt="" class="skills-logo" />
+        <img src="NextJsCircle.png" alt="" class="skills-logo" />
+      
+      </div>
+    </section>
+
+
+    <!-- ---------- Contact me section ------------ -->
+
+
+    <section class="contact-me-section" id="contact-me">
+      <div class="container">
+        <h2>Contact me</h2>
+        <h3>Questions, Thoughts, Or Just Want To Say Hello?</h3>
+
+        <div class="contact-us-form">
+          <form action="#">
+            <div class="form-field-container">
+              <input class="form-field" type="text" placeholder="Enter your name" />
+            </div>
+            <div class="form-field-container">
+              <input class="form-field" type="email" placeholder="Enter your email address" />
+            </div>
+            <div class="form-field-container">
+              <input class="form-field" type="text" placeholder="Enter your Subject address" />
+            </div>
+            <div class="form-field-container">
+              <textarea class="form-field" name="message" id="" cols="30" rows="10"
+                placeholder="Enter your message"></textarea>
+            </div>
+            <div class="form-btn">
+              <button type="submit" class="btn-pink"id="submit-btn">
+                Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------- Footer section ------------ -->
+
+
+
+<footer>
+      <div class="container footer-container">
+        <div class="footer-faded-text">Utkarsh Khasgiwale</div>
+        <div class="link-container">
+          <div>
+            <a href="#projects">Projects</a>
+          </div>
+          <div>
+            <a href="#skills">Skills</a>
+          </div>
+          <div>
+            <a href="#contact-me">Contact me</a>
+          </div>
+        </div>
+        <div class="icon-container">
+          <i class="fa-brands fa-linkedin icon"></i>
+          <i class="fa-brands fa-github icon"></i>
+          <i class="fa-brands fa-twitter icon"></i>
+          <i class="fa-brands fa-instagram icon"></i>
+          <i class="fa-regular fa-envelope icon"></i>
+        </div>
+      </div>
+    </footer>
+
+   </div>
+</body>
+</html>
